@@ -43,3 +43,16 @@ jobs:
         name: ar1
         # Directory containing files to upload
         path: .
+  job2:
+    needs: [build]
+    runs-on: windows-latest
+    steps:
+      - name: Download artifact
+        uses: actions/download-artifact@v1.0.0
+        with:
+          # Artifact name
+          name: ar1
+          # Destination path
+          path: .\ar12
+    
+   
