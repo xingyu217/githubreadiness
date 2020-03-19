@@ -25,8 +25,6 @@ jobs:
     - uses: actions/checkout@v2
     - name: docker test
       uses: docker://alpine:3.8 
-      with:
-        super_secret: ${{secrets.super_secret}}
       env:
         super_secret:${{secrets.super_secret}}  
     # Runs a single command using the runners shell
