@@ -26,7 +26,7 @@ jobs:
     - name: docker test
       uses: docker://alpine:3.8 
       env:
-        super_secret:${{secrets.super_secret}}  
+        super_secret: ${{secrets.super_secret}}  
     # Runs a single command using the runners shell
     - name: Run a one-line script
       run: echor Hello, world!
