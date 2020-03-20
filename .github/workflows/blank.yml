@@ -38,7 +38,7 @@ jobs:
         echo test, and deploy your project.
     - name: Hello world action step
       id: hello
-      uses: xingyu217/hello-world-docker-action@v1.0
+      uses: xingyu217/hello-world-docker-action@v1.1
       with:
         who-to-great: 'chen'
     - name: get output
