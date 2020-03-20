@@ -36,6 +36,13 @@ jobs:
       run: |
         echo Add other actions to build,
         echo test, and deploy your project.
+    - name: Hello world action step
+      id: hello
+      uses: xingyu217/hello-world-docker-action@v1.0
+      with:
+        who-to-great: 'chen'
+    - name: get output
+      run: echo 'the time was $${{steps.hello.outputs.time}}
     - name: Upload artifact
       uses: actions/upload-artifact@v1.0.0
       with:
