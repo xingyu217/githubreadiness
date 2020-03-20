@@ -42,7 +42,7 @@ jobs:
       with:
         who-to-great: 'chen'
     - name: get output
-      run: echo 'the time was $${{steps.hello.outputs.time}}
+      run: echo 'the time was $${{steps.hello.outputs.time}}'
     - name: Upload artifact
       uses: actions/upload-artifact@v1.0.0
       with:
